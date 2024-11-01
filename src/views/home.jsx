@@ -7,6 +7,9 @@ import { FaTablets } from "react-icons/fa";
 import { FaVial } from "react-icons/fa6";
 import { PiPhoneCall } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
+import { HiCheckBadge } from "react-icons/hi2";
 
 import serviceImg1 from "../assets/images/service-img-1.jpg";
 import serviceImg2 from "../assets/images/service-img-2.jpg";
@@ -18,6 +21,10 @@ import serviceSubItemImg2 from "../assets/images/service-subItem-img-2.svg";
 import serviceSubItemImg3 from "../assets/images/service-subItem-img-3.svg";
 import serviceSubItemImg4 from "../assets/images/service-subItem-img-4.svg";
 
+import doctorImg1 from "../assets/images/doctor-img-1.jpg";
+import doctorImg2 from "../assets/images/doctor-img-2.jpg";
+import doctorBg from "../assets/images/doctor-img.jpg";
+import doctorDummyimg from "../assets/images/doctor-dummy-img.jpg";
 const Home = () => {
   return (
     <div className="w-full">
@@ -124,6 +131,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/**========== services section ====== */}
       <div className="w-full bg-primary-500 flex justify-center py-10">
         <div className="w-10/12 flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold mb-3">
@@ -214,6 +222,157 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/**========== Doctors section ====== */}
+      <div className="relative w-full bg-transparent flex justify-center items-center py-10">
+        <img
+          src={doctorBg}
+          alt=""
+          className="absolute z-[-1] right-0 top-0 h-[600px] w-[400px]"
+        />
+        <div className="w-10/12 flex flex-col items-center justify-center relative ">
+          <h1 className="text-3xl font-bold mb-3">Book Our Doctor</h1>
+          <p className="w-6/12 text-center text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nulla nobis culpa eos quaerat quidem id voluptate totam numquam
+          </p>
+          <div className="w-full my-10 flex gap-[20px]">
+            <div className="group w-3/12 border shadow-sm rounded-xl overflow-hidden h-[300px] flex flex-col items-center justify-center relative">
+              <img src={doctorImg1} alt="" className="h-full w-full" />
+              <div className="w-full absolute bg-white p-4 bottom-[-120px] group-hover:bottom-0 transition-all duration-500 flex flex-col items-center justify-center">
+                <div className="rounded-xl bg-primary flex items-center justify-center p-3 absolute top-[-25px] group-hover:scale-100 scale-0 transition-all duration-300">
+                  <img
+                    src={serviceSubItemImg4}
+                    alt=""
+                    className="h-[30px] w-[30px]"
+                  />
+                </div>
+                <div className="flex gap-[5px] items-center justify-center group-hover:mt-4">
+                  <h1 className="text-xl font-semibold">Dr. Humaira Khatoon</h1>
+                  <HiCheckBadge className="text-3xl text-[rgba(40,167,69,1)]" />
+                </div>
+                <p className="text-secondary text-base mt-2">Orthopedic</p>
+                <div className="flex gap-[10px] my-2">
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaRegStar className="text-xl text-yellow-600" />
+                </div>
+
+                <button className="rounded-lg bg-primary text-white w-full py-2 my-4">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div className="group w-3/12 border shadow-sm rounded-xl overflow-hidden h-[300px] flex flex-col items-center justify-center relative">
+              <img src={doctorImg2} alt="" className="h-full w-full" />
+              <div className="w-full absolute bg-white p-4 bottom-[-120px] group-hover:bottom-0 transition-all duration-500 flex flex-col items-center justify-center">
+                <div className="rounded-xl bg-primary flex items-center justify-center p-3 absolute top-[-25px] group-hover:scale-100 scale-0 transition-all duration-300">
+                  <img
+                    src={serviceSubItemImg4}
+                    alt=""
+                    className="h-[30px] w-[30px]"
+                  />
+                </div>
+                <div className="flex gap-[5px] items-center justify-center group-hover:mt-4">
+                  <h1 className="text-xl font-semibold">Dr. Rahil Ali</h1>
+                  <HiCheckBadge className="text-3xl text-[rgba(40,167,69,1)]" />
+                </div>
+                <p className="text-secondary text-base mt-2">Orthopedic</p>
+                <div className="flex gap-[10px] my-2">
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaRegStar className="text-xl text-yellow-600" />
+                </div>
+
+                <button className="rounded-lg bg-primary text-white w-full py-2 my-4">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div className="group w-3/12 border shadow-sm rounded-xl overflow-hidden h-[300px] flex flex-col items-center justify-center relative">
+              <img src={doctorDummyimg} alt="" className="h-full w-full" />
+              <div className="w-full absolute bg-white p-4 bottom-[-120px] group-hover:bottom-0 transition-all duration-500 flex flex-col items-center justify-center">
+                <div className="rounded-xl bg-primary flex items-center justify-center p-3 absolute top-[-25px] group-hover:scale-100 scale-0 transition-all duration-300">
+                  <img
+                    src={serviceSubItemImg4}
+                    alt=""
+                    className="h-[30px] w-[30px]"
+                  />
+                </div>
+                <div className="flex gap-[5px] items-center justify-center group-hover:mt-4">
+                  <h1 className="text-xl font-semibold">Dr. Reyaz Ahmad</h1>
+                  <HiCheckBadge className="text-3xl text-[rgba(40,167,69,1)]" />
+                </div>
+                <p className="text-secondary text-base mt-2">Orthopedic</p>
+                <div className="flex gap-[10px] my-2">
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaRegStar className="text-xl text-yellow-600" />
+                </div>
+
+                <button className="rounded-lg bg-primary text-white w-full py-2 my-4">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div className="group w-3/12 border shadow-sm rounded-xl overflow-hidden h-[300px] flex flex-col items-center justify-center relative">
+              <img src={doctorDummyimg} alt="" className="h-full w-full" />
+              <div className="w-full absolute bg-white p-4 bottom-[-120px] group-hover:bottom-0 transition-all duration-500 flex flex-col items-center justify-center">
+                <div className="rounded-xl bg-primary flex items-center justify-center p-3 absolute top-[-25px] group-hover:scale-100 scale-0 transition-all duration-300">
+                  <img
+                    src={serviceSubItemImg4}
+                    alt=""
+                    className="h-[30px] w-[30px]"
+                  />
+                </div>
+                <div className="flex gap-[5px] items-center justify-center group-hover:mt-4">
+                  <h1 className="text-xl font-semibold">Dr. Mohibullah </h1>
+                  <HiCheckBadge className="text-3xl text-[rgba(40,167,69,1)]" />
+                </div>
+                <p className="text-secondary text-base mt-2">Orthopedic</p>
+                <div className="flex gap-[10px] my-2">
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaStar className="text-xl text-yellow-600" />
+                  <FaRegStar className="text-xl text-yellow-600" />
+                </div>
+
+                <button className="rounded-lg bg-primary text-white w-full py-2 my-4">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex justify-end">
+            <button className="flex items-center gap-[5px] bg-primary rounded-xl px-6 py-3 text-white hover:border hover:bg-white hover:text-primary">
+              <p>View More</p> <FaArrowRightLong />{" "}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/**========== Available Features section ====== */}     
+      <div className="w-full bg-primary-500 flex justify-center py-10">
+        <div className="w-10/12 flex flex-col items-center justify-center">
+          <h1 className="text-3xl font-bold mb-3">
+            Available Features in Our Ibn-e-sina
+          </h1>
+          <p className="w-6/12 text-center text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nulla nobis culpa eos quaerat quidem id voluptate totam numquam
+          </p>
+          <div className="w-full flex gap-[20px] mt-8">
+           
           </div>
         </div>
       </div>
