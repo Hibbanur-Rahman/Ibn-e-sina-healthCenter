@@ -5,7 +5,7 @@ import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full flex items-center justify-center bg-[#e7e7e850] ">
+    <div className="w-full flex flex-col items-center justify-center bg-[#e7e7e850] ">
       <div className="w-10/12 flex gap-[10px] py-8 justify-between">
         <div className="w-3/12">
           <h1
@@ -63,6 +63,12 @@ const Footer = () => {
             <FaEnvelope className="text-secondary text-lg" />
             <p className="text-gray-800">ibnesina@manuu.edu.in</p>
           </div>
+        </div>
+      </div>
+      <div className="w-full bg-[#e5e5e5]  flex items-center justify-center">
+        <div className="w-10/12 flex items-center justify-between py-3">
+          <p className="text-black">© 2024 Doccure. All rights reserved.</p>
+          <p className="text-black">Terms and Conditions | Privacy Policy</p>
         </div>
       </div>
     </div>
