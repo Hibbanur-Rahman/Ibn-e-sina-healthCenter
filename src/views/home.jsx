@@ -10,6 +10,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { HiCheckBadge } from "react-icons/hi2";
+import { LuClock4 } from "react-icons/lu";
+import { MdLocalOffer } from "react-icons/md";
 
 import serviceImg1 from "../assets/images/service-img-1.jpg";
 import serviceImg2 from "../assets/images/service-img-2.jpg";
@@ -25,6 +27,16 @@ import doctorImg1 from "../assets/images/doctor-img-1.jpg";
 import doctorImg2 from "../assets/images/doctor-img-2.jpg";
 import doctorBg from "../assets/images/doctor-img.jpg";
 import doctorDummyimg from "../assets/images/doctor-dummy-img.jpg";
+
+import featuresImg1 from "../assets/images/features-01.png";
+import featuresImg2 from "../assets/images/features-02.png";
+import featuresImg3 from "../assets/images/features-03.png";
+import featuresImg4 from "../assets/images/features-04.png";
+import featuresCardBg from "../assets/images/features-bg-circle.png";
+
+import blogImg1 from "../assets/images/blog-1.jpg";
+import blogImg2 from "../assets/images/blog-02.jpg";
+import blogImg3 from "../assets/images/blog-03.jpg";
 const Home = () => {
   return (
     <div className="w-full">
@@ -361,9 +373,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/**========== Available Features section ====== */}     
+      {/**========== Available Features section ====== */}
       <div className="w-full bg-primary-500 flex justify-center py-10">
-        <div className="w-10/12 flex flex-col items-center justify-center">
+        <div className="w-10/12 flex flex-col items-center justify-center py-10">
           <h1 className="text-3xl font-bold mb-3">
             Available Features in Our Ibn-e-sina
           </h1>
@@ -371,8 +383,197 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
             nulla nobis culpa eos quaerat quidem id voluptate totam numquam
           </p>
-          <div className="w-full flex gap-[20px] mt-8">
-           
+
+          <div className=" w-full flex gap-[20px] mt-8">
+            <div className="group relative w-3/12 border shadow-md rounded-lg p-3 flex flex-col items-center justify-center bg-white h-auto py-12 overflow-hidden cursor-pointer">
+              <div className="relative flex items-center justify-center w-[160px]">
+                <img
+                  src={featuresCardBg}
+                  alt=""
+                  className="absolute h-[160px] w-full z-[2]"
+                />
+                <div className="rounded-full flex items-center justify-center p-6 bg-[#f1f1f1] w-max relative z-[3]">
+                  <img
+                    src={featuresImg1}
+                    alt=""
+                    className="h-[60px] w-[60px]"
+                  />
+                </div>
+              </div>
+
+              <p className="mt-10 text-lg group-hover:text-white group-hover:z-[2] relative">
+                Medical
+              </p>
+              <div className="absolute top-0 w-full group-hover:bg-primary h-[0px] group-hover:h-full transition-all duration-300"></div>
+            </div>
+            <div className="group relative w-3/12 border shadow-md rounded-lg p-3 flex flex-col items-center justify-center bg-white h-auto py-12 overflow-hidden cursor-pointer">
+              <div className="relative flex items-center justify-center w-[160px]">
+                <img
+                  src={featuresCardBg}
+                  alt=""
+                  className="absolute h-[160px] w-full z-[2]"
+                />
+                <div className="rounded-full flex items-center justify-center p-6 bg-[#f1f1f1] w-max relative z-[3]">
+                  <img
+                    src={featuresImg2}
+                    alt=""
+                    className="h-[60px] w-[60px]"
+                  />
+                </div>
+              </div>
+
+              <p className="mt-10 text-lg group-hover:text-white group-hover:z-[2] relative">
+                Operation
+              </p>
+              <div className="absolute top-0 w-full group-hover:bg-primary h-[0px] group-hover:h-full transition-all duration-300"></div>
+            </div>
+            <div className="group relative w-3/12 border shadow-md rounded-lg p-3 flex flex-col items-center justify-center bg-white h-auto py-12 overflow-hidden cursor-pointer">
+              <div className="relative flex items-center justify-center w-[160px]">
+                <img
+                  src={featuresCardBg}
+                  alt=""
+                  className="absolute h-[160px] w-full z-[2]"
+                />
+                <div className="rounded-full flex items-center justify-center p-6 bg-[#f1f1f1] w-max relative z-[3]">
+                  <img
+                    src={featuresImg3}
+                    alt=""
+                    className="h-[60px] w-[60px]"
+                  />
+                </div>
+              </div>
+
+              <p className="mt-10 text-lg group-hover:text-white group-hover:z-[2] relative">
+                Laboratory
+              </p>
+              <div className="absolute top-0 w-full group-hover:bg-primary h-[0px] group-hover:h-full transition-all duration-300"></div>
+            </div>
+            <div className="group relative w-3/12 border shadow-md rounded-lg p-3 flex flex-col items-center justify-center bg-white h-auto py-12 overflow-hidden cursor-pointer">
+              <div className="relative flex items-center justify-center w-[160px]">
+                <img
+                  src={featuresCardBg}
+                  alt=""
+                  className="absolute h-[160px] w-full z-[2]"
+                />
+                <div className="rounded-full flex items-center justify-center p-6 bg-[#f1f1f1] w-max relative z-[3]">
+                  <img
+                    src={featuresImg4}
+                    alt=""
+                    className="h-[60px] w-[60px]"
+                  />
+                </div>
+              </div>
+
+              <p className="mt-10 text-lg group-hover:text-white group-hover:z-[2] relative">
+                ICU
+              </p>
+              <div className="absolute top-0 w-full group-hover:bg-primary h-[0px] group-hover:h-full transition-all duration-300"></div>
+            </div>
+          </div>
+          <div className="w-full flex justify-end mt-10">
+            <button className="flex items-center gap-[5px] bg-primary rounded-xl px-6 py-3 text-white hover:border hover:bg-white hover:text-primary">
+              <p>View More</p> <FaArrowRightLong />{" "}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/**========== News section ====== */}
+      <div className="w-full bg-white flex justify-center py-10">
+        <div className="w-10/12 flex flex-col items-center justify-center py-10">
+          <h1 className="text-3xl font-bold mb-3">Let's See Our Latest News</h1>
+          <p className="w-6/12 text-center text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            nulla nobis culpa eos quaerat quidem id voluptate totam numquam
+          </p>
+
+          <div className=" w-full flex gap-[20px] mt-8">
+            <div className=" group w-4/12 rounded-lg shadow-md hover:shadow-2xl overflow-hidden transition-all duration-200">
+              <div className="w-full h-[250px] overflow-hidden">
+                <img
+                  src={blogImg1}
+                  alt=""
+                  className="h-full w-full group-hover:scale-125 scale-100 transition-all duration-200"
+                />
+              </div>
+              <div className="w-full flex flex-col p-4 py-8">
+                <div className="w-full flex gap-[10px]">
+                  <div className="flex items-center justify-center gap-[5px] bg-[#3E5463] rounded-md px-3 py-2">
+                    <LuClock4 className="text-white" />
+                    <p className="text-white text-sm">18 Jul 2023</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-[5px] bg-[#E9F5FF] rounded-md px-3 py-2">
+                    <MdLocalOffer className="text-primary" />
+                    <p className="text-gray-800 text-sm">Doctor</p>
+                  </div>
+                </div>
+                <p className="text-lg font-semibold  my-4 ">
+                  Ibn-e-Sina -- Making Your clinic painless visit?
+                </p>
+                <p className="underline text-red-600 cursor-pointer hover:text-primary text-lg">
+                  Read More
+                </p>
+              </div>
+            </div>
+            <div className=" group w-4/12 rounded-lg shadow-md hover:shadow-2xl overflow-hidden transition-all duration-200">
+              <div className="w-full h-[250px] overflow-hidden">
+                <img
+                  src={blogImg2}
+                  alt=""
+                  className="h-full w-full group-hover:scale-125 scale-100 transition-all duration-200"
+                />
+              </div>
+              <div className="w-full flex flex-col p-4 py-8">
+                <div className="w-full flex gap-[10px]">
+                  <div className="flex items-center justify-center gap-[5px] bg-[#3E5463] rounded-md px-3 py-2">
+                    <LuClock4 className="text-white" />
+                    <p className="text-white text-sm">28 Sep 2023</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-[5px] bg-[#E9F5FF] rounded-md px-3 py-2">
+                    <MdLocalOffer className="text-primary" />
+                    <p className="text-gray-800 text-sm">Clinic</p>
+                  </div>
+                </div>
+                <p className="text-lg font-semibold  my-4 ">
+                  Benefits of Consulting with an Online Doctor
+                </p>
+                <p className="underline text-red-600 cursor-pointer hover:text-primary text-lg">
+                  Read More
+                </p>
+              </div>
+            </div>
+            <div className=" group w-4/12 rounded-lg shadow-md hover:shadow-2xl overflow-hidden transition-all duration-200">
+              <div className="w-full h-[250px] overflow-hidden">
+                <img
+                  src={blogImg3}
+                  alt=""
+                  className="h-full w-full group-hover:scale-125 scale-100 transition-all duration-200"
+                />
+              </div>
+              <div className="w-full flex flex-col p-4 py-8">
+                <div className="w-full flex gap-[10px]">
+                  <div className="flex items-center justify-center gap-[5px] bg-[#3E5463] rounded-md px-3 py-2">
+                    <LuClock4 className="text-white" />
+                    <p className="text-white text-sm">15 Dec 2023</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-[5px] bg-[#E9F5FF] rounded-md px-3 py-2">
+                    <MdLocalOffer className="text-primary" />
+                    <p className="text-gray-800 text-sm">Doctor</p>
+                  </div>
+                </div>
+                <p className="text-lg font-semibold  my-4 ">
+                  What are the benefits of online doctor booking 
+                </p>
+                <p className="underline text-red-600 cursor-pointer hover:text-primary text-lg">
+                  Read More
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex justify-center mt-10">
+            <button className="flex items-center gap-[5px] bg-primary rounded-xl px-6 py-3 text-white hover:border hover:bg-white hover:text-primary">
+              <p>View More</p> <FaArrowRightLong />{" "}
+            </button>
           </div>
         </div>
       </div>
