@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
       <div className="w-full bg-[#e5e5e5]  flex items-center justify-center">
         <div className="w-10/12 flex items-center justify-between py-3">
-          <p className="text-black">© 2024 Doccure. All rights reserved.</p>
+          <p className="text-black">© 2024 Ibn-e-Sina. All rights reserved.</p>
           <p className="text-black">Terms and Conditions | Privacy Policy</p>
         </div>
       </div>
